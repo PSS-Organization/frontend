@@ -1,4 +1,6 @@
 import './App.css'
+import './index.css';  // no sirve aun
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginScreen from './pages/LoginScreen';
 import SignupScreen from './pages/SignupScreen';
