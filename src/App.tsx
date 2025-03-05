@@ -1,12 +1,20 @@
 import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LoginScreen from './pages/LoginScreen';
+import SignupScreen from './pages/SignupScreen';
 
 function App() {
   return (
-    <>
-    <LoginScreen></LoginScreen>
-    </>
-  )
+    <Router>
+      <Routes>
+        {/* Make "/" load the login screen */}
+        <Route path="/" element={<LoginScreen />} />
+
+        {/* Example: route for signup */}
+        <Route path="/signup" element={<SignupScreen />} />
+      </Routes>
+    </Router>
+  );
 }
 
 export default App
